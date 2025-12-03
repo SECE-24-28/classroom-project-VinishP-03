@@ -1,0 +1,46 @@
+.welcome{
+    color: rgb(232, 237, 232);
+    height: auto;
+    width: auto;
+    border-width: 5px;
+    border-radius:5px;
+    padding: 55px;
+    padding-left: 150px;
+    margin: 15px 15px 15px 15px ;
+    background-image: url(https://static0.moviewebimages.com/wordpress/wp-content/uploads/2022/12/341369.jpg?q=50&fit=crop&w=1120&h=630&dpr=1.5);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: "Science Gothic";
+    animation-name: demonslayer;
+    animation-duration: 5s;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    
+    
+    
+}
+@keyframes demonslayer{
+    0%{background-image:url(https://i.pinimg.com/1200x/ca/b3/e1/cab3e148cfc9bd33bf3dfdcb247bf85d.jpg)};
+    25%{background-image:url(https://i.pinimg.com/1200x/d7/54/fb/d754fb6ad54f05b0d9ace17d4c328ca8.jpg)};
+    50%{background-image:url(https://i.pinimg.com/1200x/d7/54/fb/d754fb6ad54f05b0d9ace17d4c328ca8.jpg)};
+    75%{background-image:url(https://i.pinimg.com/736x/0a/c6/da/0ac6da27484d36c2c10d1b34a5a2129d.jpg)};
+    100%{background-image:url(https://i.pinimg.com/736x/61/15/3b/61153b8ebf42ca2236c30c79c2ed0127.jpg)};
+
+}
+/* div:hover{
+   background-image: linear-gradient(to bottom left blue,green);
+} */
+ /* .welcome:hover{
+   
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxjHk0w4x9EGOPOTMNC2mNHNpVGz6WiYahNA&s);
+}  */
+/* .slogan{
+    font-style: italic;
+    text-decoration: underline;
+} */
+img{
+   filter: drop-shadow( 15px 15px 15px green);
+    height: auto;
+    width: 400px;
+}
