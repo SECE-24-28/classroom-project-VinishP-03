@@ -6,6 +6,7 @@
     <title>login Page</title>
 </head>
 <body>
+    <script src="/day4/script.js"></script>
     <header>
         <nav>
             <a href="index.html">Home</a>
@@ -25,7 +26,7 @@
                     <label for = "username">UserName:</label>
                 </td>
                 <td>
-                    <input type="text" name = "username" placeholder="Enter your UserName" required>
+                    <input type="text" name = "username" placeholder="Enter your UserName" required id="user">
                 </td>
             </tr>
             <tr>
@@ -33,12 +34,12 @@
                     <label for = "Password">Password:</label>
                 </td>
                 <td>
-                    <input type = "password" name = "Passowrd" id=""  placeholder="Enter your password" required>
+                    <input type = "password" name = "Passowrd" id="pass"  placeholder="Enter your password" required >
                 </td>
             </tr>
             <tr>
                 <td>
-                    <label for =" usertype">UserType:</label>
+                    <label for ="usertype">UserType:</label>
                 </td>
                 <td>
                     <input type = "radio" name="usertype" id = "student" value = "student">
@@ -51,7 +52,7 @@
             <tr>
                 <td></td>
                 <td>
-                    <input type="button" value = "Submit" name="Submit">
+                    <input type="button" value = "Submit" name="Submit" onclick="myfunction()">
                 </td>
             </tr>
         </table>
