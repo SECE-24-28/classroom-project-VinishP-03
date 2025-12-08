@@ -1,0 +1,319 @@
+.hero {
+  background: linear-gradient(135deg, #0a0a14 0%, #1a1a2a 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: 
+    radial-gradient(circle at 20% 30%, rgba(45, 140, 240, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 70%, rgba(255, 77, 79, 0.1) 0%, transparent 50%);
+}
+
+.hero-content {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  padding: 40px 0;
+}
+
+/* Hero Title */
+.hero-title {
+  margin-bottom: 40px;
+}
+
+.hero-title h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 4rem;
+  font-weight: 900;
+  color: white;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  line-height: 1.2;
+}
+
+.title-border {
+  width: 200px;
+  height: 4px;
+  background: linear-gradient(90deg, #2d8cf0, #ff4d4f);
+  margin: 0 auto;
+  border-radius: 2px;
+  animation: border-pulse 3s infinite;
+}
+
+@keyframes border-pulse {
+  0%, 100% { opacity: 0.7; }
+  50% { opacity: 1; }
+}
+
+/* Hero Tagline */
+.hero-tagline {
+  margin-bottom: 50px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-tagline .quote {
+  font-size: 1.8rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-style: italic;
+  margin-bottom: 20px;
+  font-family: 'Cinzel', serif;
+}
+
+.hero-tagline .description {
+  font-size: 1.2rem;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.8;
+}
+
+/* Hero Buttons */
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 60px;
+  flex-wrap: wrap;
+}
+
+.btn-icon {
+  font-size: 1.2rem;
+}
+
+/* Characters Grid */
+.characters-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  margin-bottom: 60px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.character-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 15px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease;
+}
+
+.character-card:hover {
+  transform: translateY(-10px);
+  border-color: #2d8cf0;
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+.character-image {
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.character-image.water {
+  background: linear-gradient(135deg, rgba(45, 140, 240, 0.2), rgba(45, 140, 240, 0.1));
+}
+
+.character-image.fire {
+  background: linear-gradient(135deg, rgba(255, 77, 79, 0.2), rgba(255, 77, 79, 0.1));
+}
+
+.image-placeholder {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid;
+}
+
+.water .image-placeholder {
+  border-color: #2d8cf0;
+}
+
+.fire .image-placeholder {
+  border-color: #ff4d4f;
+}
+
+.kanji {
+  font-size: 3rem;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.character-info {
+  padding: 25px;
+  text-align: left;
+}
+
+.character-info h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  color: white;
+  margin-bottom: 8px;
+}
+
+.character-info p {
+  color: rgba(255, 255, 255, 0.6);
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+.character-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tag {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 6px 12px;
+  border-radius: 15px;
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+/* Breathing Section */
+.breathing-section {
+  margin-top: 60px;
+}
+
+.breathing-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.8rem;
+  color: white;
+  margin-bottom: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.breathing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.breathing-card {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 12px;
+  padding: 30px 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.breathing-card:hover {
+  transform: translateY(-5px);
+  border-color: transparent;
+}
+
+.water.breathing-card:hover {
+  box-shadow: 0 10px 20px rgba(45, 140, 240, 0.2);
+}
+
+.fire.breathing-card:hover {
+  box-shadow: 0 10px 20px rgba(255, 77, 79, 0.2);
+}
+
+.thunder.breathing-card:hover {
+  box-shadow: 0 10px 20px rgba(250, 219, 20, 0.2);
+}
+
+.wind.breathing-card:hover {
+  box-shadow: 0 10px 20px rgba(82, 196, 26, 0.2);
+}
+
+.breathing-icon {
+  font-size: 3rem;
+  margin-bottom: 15px;
+  display: inline-block;
+  animation: float 3s infinite ease-in-out;
+}
+
+.breathing-card h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.1rem;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+  .hero-title h1 {
+    font-size: 3rem;
+  }
+  
+  .hero-tagline .quote {
+    font-size: 1.5rem;
+  }
+  
+  .hero-tagline .description {
+    font-size: 1.1rem;
+  }
+  
+  .characters-grid {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+  }
+  
+  .hero-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-title h1 {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+  }
+  
+  .hero-tagline .quote {
+    font-size: 1.3rem;
+  }
+  
+  .breathing-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-title h1 {
+    font-size: 2rem;
+  }
+  
+  .breathing-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .character-image {
+    height: 180px;
+  }
+  
+  .kanji {
+    font-size: 2.5rem;
+  }
+}

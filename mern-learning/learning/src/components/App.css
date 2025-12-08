@@ -1,0 +1,125 @@
+/* RESET & BASE STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #0a0a14;
+  color: #ffffff;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+/* CONTAINER */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* SECTIONS */
+section {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 80px 0;
+}
+
+/* BUTTONS */
+.btn {
+  padding: 16px 32px;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  min-width: 200px;
+}
+
+.btn-primary {
+  background: linear-gradient(45deg, #2d8cf0, #1a6fd9);
+  color: white;
+  box-shadow: 0 4px 15px rgba(45, 140, 240, 0.3);
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(45, 140, 240, 0.5);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: white;
+  border: 2px solid #ff4d4f;
+  box-shadow: 0 4px 15px rgba(255, 77, 79, 0.2);
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 77, 79, 0.1);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 25px rgba(255, 77, 79, 0.4);
+}
+
+/* SECTION TITLES */
+.section-title {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+  text-align: center;
+  margin-bottom: 20px;
+  background: linear-gradient(45deg, #2d8cf0, #ff4d4f);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.section-subtitle {
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin: 0 auto 50px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2.2rem;
+  }
+  
+  .section-subtitle {
+    font-size: 1rem;
+  }
+  
+  .btn {
+    padding: 14px 24px;
+    min-width: 180px;
+  }
+}
